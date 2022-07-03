@@ -9,7 +9,11 @@ import com.watch.store.model.exception.IncorrectDataException;
 import com.watch.store.model.service.ProductService;
 import com.watch.store.view.View;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
 
 import static com.watch.store.util.CommandNames.COLOR;
 import static com.watch.store.util.CommandNames.DATE;
