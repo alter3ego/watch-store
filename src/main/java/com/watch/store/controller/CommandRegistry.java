@@ -1,6 +1,12 @@
 package com.watch.store.controller;
 
-import com.watch.store.controller.command.*;
+import com.watch.store.controller.command.AddCWatchCommand;
+import com.watch.store.controller.command.AllProductsCommand;
+import com.watch.store.controller.command.AllProductsOrderByCommand;
+import com.watch.store.controller.command.Command;
+import com.watch.store.controller.command.TerminateCommand;
+import com.watch.store.controller.command.TotalCostCommand;
+import com.watch.store.controller.command.UnknownCommand;
 import com.watch.store.model.dao.ProductDB;
 import com.watch.store.model.service.ProductService;
 import com.watch.store.model.service.impl.ProductServiceImpl;

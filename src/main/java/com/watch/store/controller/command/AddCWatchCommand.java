@@ -1,13 +1,28 @@
 package com.watch.store.controller.command;
 
-import com.watch.store.model.entity.*;
+import com.watch.store.model.entity.Color;
+import com.watch.store.model.entity.MechanicalWatch;
+import com.watch.store.model.entity.QuartzWatch;
+import com.watch.store.model.entity.SolarWatch;
+import com.watch.store.model.entity.Watch;
 import com.watch.store.model.exception.IncorrectDataException;
 import com.watch.store.model.service.ProductService;
 import com.watch.store.view.View;
 
 import java.util.*;
 
-import static com.watch.store.util.CommandNames.*;
+import static com.watch.store.util.CommandNames.COLOR;
+import static com.watch.store.util.CommandNames.DATE;
+import static com.watch.store.util.CommandNames.ERROR_COUNTING_SECONDS_PER_MONTH;
+import static com.watch.store.util.CommandNames.EXIT;
+import static com.watch.store.util.CommandNames.MANUFACTURER;
+import static com.watch.store.util.CommandNames.MECHANICAL_WATCH;
+import static com.watch.store.util.CommandNames.MENU;
+import static com.watch.store.util.CommandNames.PRICE;
+import static com.watch.store.util.CommandNames.QUARTZ_WATCH;
+import static com.watch.store.util.CommandNames.SOLAR_WATCH;
+import static com.watch.store.util.CommandNames.STRAP_LENGTH;
+import static com.watch.store.util.CommandNames.TITLE;
 
 public class AddCWatchCommand extends AbstractCommand {
     private static final String REGEX_ANY_TEXT = "[\\s\\S\\w\\W\\d\\D]{1,40}";
